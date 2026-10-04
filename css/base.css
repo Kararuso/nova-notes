@@ -1,0 +1,11 @@
+/* Переменные, сброс, типографика, каркас страницы */
+:root{color-scheme:light;--bg:#EEF0FF;--sf:#F8F9FF;--tx:#2E3050;--mut:#8A8DB0;--ac:#7C83FD;--acd:#5B62E0;--on:#F7F8FF;--ln:#DDE0FA;--sh:0 10px 28px rgba(124,131,253,.16),0 1px 3px rgba(124,131,253,.14);--f:"Manrope",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;height:100%;background:var(--bg);color:var(--tx);font-family:var(--f);font-size:16px;line-height:1.4;-webkit-font-smoothing:antialiased;overscroll-behavior:none}
+button,input,textarea,select{font-family:inherit}
+#app{position:fixed;inset:0;overflow-y:auto;-webkit-overflow-scrolling:touch}
+.wrap{max-width:600px;margin:0 auto;padding:calc(env(safe-area-inset-top,0px) + 26px) 18px calc(env(safe-area-inset-bottom,0px) + 130px)}
+h1{font-size:34px;font-weight:800;letter-spacing:-1.2px;line-height:1.08;margin:10px 4px 4px}
+.sub{color:var(--mut);font-size:15px;font-weight:500;margin:0 4px 22px}
+.top{display:flex;justify-content:space-between;align-items:center;min-height:32px}
+.btn{border:0;background:none;color:var(--acd);font-weight:600;font-size:16px;padding:6px 4px;cursor:pointer}
